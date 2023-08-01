@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pamodzichild.Donations.Approve">
+
+    <LinearLayout
+        android:id="@+id/no_donations"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtLoading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="There are no new Donations Today\nPlease check back later"
+            android:textAlignment="center"
+            android:textColor="@color/DarkBlue"
+            android:textSize="30sp"
+            android:textStyle="bold"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/emptycart2" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Please approve only donations you have verified"
+                android:textAlignment="center"
+                android:textColor="@color/DarkBlue"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+
+                />
+
+
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:iconifiedByDefault="true"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:background="@drawable/rounded_edittext"
+                android:queryHint=" Search..."/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+
+
+            android:id="@+id/my_donations_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:scrollbarSize="10dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbarThumbVertical="@color/DarkBlue"
+            android:scrollbars="vertical"
+
+            tools:itemCount="2"
+            tools:listitem="@layout/my_approving_donations_list_item" />
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</FrameLayout>

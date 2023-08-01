@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.pamodzichild.Donations.MyDonations">
+
+    <LinearLayout
+        android:id="@+id/no_donations"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtLoading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="You Have not done \nany Donations Yet"
+            android:textAlignment="center"
+            android:textColor="@color/DarkBlue"
+            android:textSize="30sp"
+            android:textStyle="bold"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/emptycart2" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Donated : "
+                android:textAlignment="center"
+                android:textColor="@color/DarkBlue"
+                android:textStyle="bold"
+
+
+                />
+
+            <TextView
+                android:id="@+id/txtDonated"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:fontFamily="casual"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/DarkBlue"
+
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Available : "
+                android:textAlignment="center"
+                android:textColor="@color/DarkBlue"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/txtAvailable"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="12dp"
+                android:fontFamily="casual"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/DarkBlue"
+
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Unverified : "
+                android:textAlignment="center"
+                android:textColor="@color/DarkBlue"
+                android:textStyle="bold"
+
+
+                />
+
+            <TextView
+                android:id="@+id/txtUnverified"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:fontFamily="casual"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/DarkBlue"
+
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Rejected :"
+                android:textAlignment="center"
+                android:textColor="@color/DarkBlue"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/txtRejected"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="casual"
+                android:layout_marginEnd="12dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/DarkBlue"
+
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+
+
+            android:id="@+id/my_donations_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:scrollbarSize="10dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbarThumbVertical="@color/DarkBlue"
+            android:scrollbars="vertical"
+
+            tools:itemCount="3"
+            tools:listitem="@layout/my_donations_list_item" />
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/adddonationfab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/add" />
+
+
+</FrameLayout>

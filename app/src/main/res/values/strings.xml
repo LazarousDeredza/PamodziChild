@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Pamodzi Child</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="welcomeNote">Ever wondered how to seamlessly support a child\'s access to quality education from the comfort of your house, office etc? Wonder no more.
+        We provide convenient, safe ,transparent, realtime and accountable linkages</string>
+    <string name="about">Are you ready to be a hero in a child\'s life? Introducing Pamodzi child, the mobile app that gives you the power to transform the future through education because is the key to unlocking a brighter future. Imagine connecting directly with vulnerable households, seeing their
+    children dreams and aspirations come to life. With Pamodzi child, you become their personal superhero. Browse through profiles of bright young minds , each with unique story waiting to be written. Choose a beneficiary, provide them with the financial support or in-kind donations the need to access quality education.
+        \n\nBut we don\'t stop there. Pamodzi child is all about transparency and accountability. You will receive real-time updates on your sponsored child\'s
+        progress, witnessing firsthand the transformative power of your contribution. It\'s not just a sponsorship or donation; its a life-changing investment.\n\n
+        And we are not just about money and in-kind donations. Pamodzi child also gives you the opportunity to be a champion for a child protection. Report any case you come across, ensuring that no child\'s safety is compromised. together we can create a safe environment where every child can thrive.
+        \n\nJoin our community of passionate supporters, united by a shared belief in the potential of every child. Let\'s rewrite their future. Together, we can break down barriers, bridges the gap, and empower the next generation. Because when we stand together, there\'s no limit to what we can archive
+
+    </string>
+
+</resources>

@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:id="@+id/cv"
+                                   android:elevation="10dp"
+                                   app:cardElevation="10dp"
+                                   android:layout_marginLeft="10dp"
+                                   android:layout_marginRight="10dp"
+                                   android:layout_marginTop="5dp"
+                                   android:layout_marginBottom="5dp">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                >
+                    <TextView
+                            android:text="Case ID"
+                            android:layout_weight="4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:id="@+id/caseID"
+                            android:textColor="#000000"
+                            android:textSize="17sp"
+                            android:textStyle="normal|italic"/>
+
+                    <Button android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:background="@drawable/background_shape"
+                            android:backgroundTint="@color/yellow"
+                            android:id="@+id/caseIDbtn"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp"
+
+                    />
+
+                </LinearLayout>
+
+
+                <TextView
+                        android:text="Child Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/childName"
+                        android:textColor="#000000"
+                        android:textSize="17sp"
+                        android:textStyle="normal|italic"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:text="Reported On :  "
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    <TextView
+                            android:text="25/08/2017"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/dateReported"
+                            android:textSize="15sp"
+                            android:textColor="#338822"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:text="Location    :    "
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    <TextView
+                            android:text="state/city"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/childlocation"
+                            android:textSize="15sp"
+                            android:textColor="#338822"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Gender : "
+                                android:textStyle="bold" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000000"
+                                android:id="@+id/childgender"
+                                android:text="Male"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Age : "
+                                android:textStyle="bold" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000000"
+                                android:id="@+id/childage"
+                                android:text="12"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:src="@drawable/expanddown"
+                            android:id="@+id/cv2"
+
+                    >
+
+                    </ImageView>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_width="240dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="10dp">
+
+                <TextView
+                        android:text="Type Of Abuse : "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                        android:textColor="#ffffff"/>
+
+                <TextView
+                        android:text="Physical Abuse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/typeofabuse"
+                        android:textSize="10sp"
+                        android:textColor="#FAEA09"/>
+                <TextView
+                        android:layout_marginTop="10dp"
+                        android:text="Current State of Child :"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                        android:textColor="#ffffff"
+                />
+                <TextView
+                        android:text="Critical"
+
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/stateofchild"
+                        android:textSize="10sp"
+                        android:textColor="#FAEA09"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="1dp"
+                android:background="#dddddd"
+                android:layout_weight="1">
+
+
+            <!--            android:visibility="gone"-->
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gone_layout"
+                android:visibility="gone"
+                    android:padding="10dp">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:text="Reporter Details"
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:textSize="14sp"
+                            android:fontFamily="casual"
+                            android:textStyle="bold"
+                            android:textColor="@color/blueish"
+                            android:layout_height="wrap_content"
+                    />
+                </LinearLayout>
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                    >
+                        <TextView
+                                android:text="Name   : "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                        <TextView
+                                android:text="John Chimuti"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/reporterName"
+                                android:textColor="#000000"
+                                android:textSize="14sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                    >
+
+                        <TextView
+                                android:text="Phone  : "
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                        <TextView
+                                android:text="+263 771234567"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/reporterphone"
+                                android:textColor="#000000"
+                                android:textSize="16sp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_weight="1">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                    >
+                        <TextView
+                                android:text="Gender : "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                        />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                        <TextView
+                                android:text="Male"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/reporterGender"
+                                android:textColor="#000000"
+                                android:textSize="14sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                    >
+
+                        <TextView
+                                android:text="Occupation  : "
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                        />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                        <TextView
+                                android:text="Programmer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/reporteroccupation"
+                                android:textColor="#000000"
+                                android:textSize="16sp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_weight="1">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                    >
+                        <TextView
+                                android:text="Email    : "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                        />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                        <TextView
+                                android:text="lazarousderedza99@gmail.com"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                                android:textSize="14sp"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#000000"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"/>
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                    android:text="Any Services Offered"
+                />
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:text="Here Short Description About offered Services"
+                        android:id="@+id/anyofferedservices"/>
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Perpetrator Details"
+                />
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:text="Here Short Description About the Perpertator"
+                        android:id="@+id/perpetratorDetails"/>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                     android:orientation="vertical"
+                     android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                   android:id="@+id/HowitwasHandledLayout"
+                   >
+                     <TextView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="How it was Handled"
+                         android:textAlignment="center"
+                         android:textStyle="bold"
+                          android:textColor="#000000"
+                          android:layout_marginTop="8dp"
+                          />
+                     <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#000000"
+                            android:text="Here Short Description About How it was Handled"
+                            android:id="@+id/HowitwasHandled"
+                            />
+               </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp">
+
+                <ImageView
+                        android:id="@+id/delbtn"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="10dp"
+                        android:padding="2dp"
+                        android:src="@drawable/deleteicon"/>
+
+                <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/editbtn"
+                        android:layout_marginEnd="50dp"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/editicon"
+                        android:padding="2dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="2dp"-->
+        <!--android:background="#000000"-->
+        <!--android:layout_weight="1" />-->
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

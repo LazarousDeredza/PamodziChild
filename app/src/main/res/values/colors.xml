@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+
+
+    <color name="navy_blue">#11B5ED</color>
+    <color name="yellow">#F39707</color>
+
+
+
+
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="green">#5FB709</color>
+    <color name="Red">#EB0D0D</color>
+    <color name="blueish">#17A2C0</color>
+    <color name="gray">#7E000000</color>
+    <color name="OffWhite">#36FFFFFF</color>
+    <color name="DarkBlue">#250285</color>
+    <color name="Black">#000000</color>
+
+    <color name="grey_300">#42423C</color>
+
+    <color name="radio_button_checked_color">#FF0000</color>
+
+    <color name="radio_button_unchecked_color">#9595F6</color>
+    <color name="red">#FF0707</color>
+
+
+
+    <color name="greenPrefered">#229D09</color>
+
+
+</resources>

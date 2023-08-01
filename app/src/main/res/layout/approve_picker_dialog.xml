@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_shape"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Choose Category:"
+        android:textAlignment="center"
+        android:textColor="@color/blueish"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/approveDonations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+
+            android:layout_weight="1"
+            android:background="@drawable/background_shape"
+            android:backgroundTint="#B69FF3"
+            android:drawablePadding="8dp"
+            android:padding="10dp"
+            android:text="Donations\n" />
+
+        <Button
+            android:id="@+id/appproveApplications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+
+            android:layout_weight="1"
+            android:background="@drawable/background_shape"
+            android:backgroundTint="#B69FF3"
+            android:drawablePadding="8dp"
+            android:padding="10dp"
+            android:text="Sponsorship\nApplications" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/approveScholarships"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+
+            android:layout_weight="1"
+            android:background="@drawable/background_shape"
+            android:backgroundTint="#B69FF3"
+            android:drawablePadding="8dp"
+            android:padding="10dp"
+            android:text="Sponsorships\nMade" />
+
+        <Button
+            android:id="@+id/camera_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_shape"
+            android:backgroundTint="#B69FF3"
+            android:drawablePadding="8dp"
+            android:padding="10dp"
+            android:text="Scholarship\nApplications"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="childAbuseTypes">
+
+        <item >Select Type</item>
+        <item>Sexual</item>
+        <item>Physical</item>
+        <item>Emotional</item>
+        <item>Neglect</item>
+        <item>Exploitation</item>
+        <item>Child Labour</item>
+        <item>Parental Substance Abuse</item>
+        <item>Parental Mental Illness</item>
+        <item>Domestic Violence</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="currentStateOfChild" >
+        <item>Select State</item>
+        <item>Injuries</item>
+        <item>Pain</item>
+        <item>Discomfort</item>
+        <item>Fear</item>
+        <item>Depression</item>
+        <item>Anger</item>
+        <item>Aggression</item>
+        <item>Withdrawal</item>
+        <item>Self Harm</item>
+        <item>Suicidal</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="donationproducttype" >
+        <item>Select Type</item>
+        <item>Food</item>
+        <item>Clothes</item>
+        <item>Shoes</item>
+        <item>Dignity Pack</item>
+        <item>Stationery</item>
+        <item>Other</item>
+
+    </string-array>
+
+</resources>

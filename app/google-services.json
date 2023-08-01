@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "688778571450",
+    "project_id": "pamodzi-child-education",
+    "storage_bucket": "pamodzi-child-education.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:688778571450:android:0c802d8b7eda865711dc83",
+        "android_client_info": {
+          "package_name": "com.pamodzichild"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "688778571450-seiajr49d6bnuct44ru4p7fadjg3mais.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtD3FskyivcFfA9olCXwpuDB1t0OqHv1k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "688778571450-seiajr49d6bnuct44ru4p7fadjg3mais.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

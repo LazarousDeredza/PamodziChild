@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/background_shape"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/blueish"
+        android:text="Choose an image source:"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/gallery_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:drawableTop="@drawable/gallery"
+            android:drawablePadding="8dp"
+            android:padding="10dp"
+            android:background="@drawable/background_shape"
+            android:backgroundTint="#B69FF3"
+            android:layout_weight="1"
+            android:text="Select from gallery" />
+
+        <Button
+            android:id="@+id/camera_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:drawableTop="@drawable/camera"
+            android:padding="10dp"
+            android:background="@drawable/background_shape"
+            android:backgroundTint="#B69FF3"
+            android:drawablePadding="8dp"
+            android:layout_weight="1"
+            android:text="Take a photo" />
+    </LinearLayout>
+
+</LinearLayout>

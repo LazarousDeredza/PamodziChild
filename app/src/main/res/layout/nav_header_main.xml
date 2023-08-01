@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@color/greenPrefered"
+    android:gravity="bottom|center"
+    android:orientation="vertical"
+
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        app:tint="#57E305"
+        android:src="@drawable/appicon2"
+        android:layout_width="150dp" />
+
+    <TextView
+        android:id="@+id/txtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="casual"
+      android:textAlignment="center"
+        android:text="User Email"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/white"
+        android:maxLines="1"
+        android:textStyle="bold"
+
+        />
+
+
+
+</LinearLayout>

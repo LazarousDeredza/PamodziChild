@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pamodzichild.Donations.Donations">
+
+
+    <LinearLayout
+        android:id="@+id/no_donations"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtLoading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="There are no Donations Today\nPlease check back later"
+            android:textAlignment="center"
+            android:textColor="@color/DarkBlue"
+            android:textSize="30sp"
+            android:textStyle="bold"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/emptycart2" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Are you in need of a Donation? "
+                    android:textAlignment="center"
+                    android:textColor="@color/DarkBlue"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="You can seek a Donation from this page"
+                    android:textAlignment="center"
+                    android:textColor="@color/DarkBlue"
+
+
+                    />
+            </LinearLayout>
+
+            <FrameLayout
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/background_shape"
+                    android:src="@drawable/baseline_shopping_cart_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center"
+                    android:layout_marginBottom="8dp"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textSize="8sp"
+
+                    android:textStyle="bold" />
+            </FrameLayout>
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+
+
+            android:id="@+id/my_donations_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:scrollbarSize="10dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbarThumbVertical="@color/DarkBlue"
+            android:scrollbars="vertical"
+
+            tools:itemCount="3"
+            tools:listitem="@layout/my_donations_list_item" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/mydonationsbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/DarkBlue"
+        android:text="My Donations"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:backgroundTint="@color/DarkBlue"
+        app:fabSize="normal"
+        app:layout_anchor="@id/my_donations_recycler_view"
+        app:layout_anchorGravity="bottom|right|end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:pressedTranslationZ="12dp"
+        app:rippleColor="@color/white" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/adddonationfab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="70dp"
+        app:srcCompat="@drawable/add" />
+
+
+
+</FrameLayout>

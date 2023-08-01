@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_donations"
+            android:icon="@drawable/inventory"
+            android:title="Donations" />
+        <item
+            android:id="@+id/nav_sponsorship"
+            android:icon="@drawable/transaction"
+            android:title="Sponsorship" />
+        <item
+            android:id="@+id/nav_crpcases"
+            android:icon="@drawable/customers"
+            android:title="CP Cases" />
+        <item
+            android:id="@+id/nav_organisations"
+            android:icon="@drawable/gallery"
+            android:title="CP Organisations" />
+
+        <item
+            android:id="@+id/nav_banks"
+            android:icon="@drawable/gallery"
+            android:title="Bank Details" />
+
+
+    </group>
+
+
+    <item android:title="Approvals">
+        <menu>
+            <item
+                android:id="@+id/approve"
+                android:icon="@drawable/ic_orders_24"
+                android:title="Make Approval" />
+        </menu>
+    </item>
+
+    <item android:title="Statistics">
+        <menu>
+            <item
+                android:id="@+id/nav_expo"
+                android:visible="false"
+                android:icon="@drawable/editicon"
+                android:title="Export Data" />
+            <item
+                android:id="@+id/nav_summary"
+                android:icon="@drawable/summary"
+                android:title="Summary" />
+        </menu>
+    </item>
+    <item android:title="Security">
+        <menu>
+            <item
+                android:id="@+id/nav_users"
+                android:icon="@drawable/seller"
+                android:title="Users" />
+
+        </menu>
+    </item>
+
+    <item android:title="Company Information">
+        <menu>
+           <!-- <item
+                android:id="@+id/nav_dev"
+                android:title="Developers" />-->
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/baseline_info_24"
+                android:title="About" />
+        </menu>
+    </item>
+
+</menu>

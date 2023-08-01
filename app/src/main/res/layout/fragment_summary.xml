@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pamodzichild.Summary.Summary">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Donations Summary"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="22dp"
+                    android:textStyle="bold|italic" />
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:text="Today"
+                                android:textSize="20dp" />
+
+                            <ImageView
+
+                                android:layout_width="120dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_vertical"
+                                android:paddingTop="15dp"
+                                android:paddingBottom="15dp"
+                                android:scaleType="fitEnd"
+                                />
+
+                            <TextView
+                                android:id="@+id/todaydonations"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:text="0"
+                                android:textColor="#41b324"
+                                android:textSize="30dp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="3dp"
+                            android:background="#000000" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#dddddd"
+                            android:orientation="horizontal">
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:text="This Month"
+                                android:textSize="20sp" />
+
+                            <ImageView
+                                android:layout_width="120dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_vertical"
+                                android:paddingTop="17dp"
+                                android:paddingBottom="15dp"
+                                android:scaleType="fitEnd"
+                               />
+
+                            <TextView
+                                android:id="@+id/thismonthdonations"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:text="0"
+                                android:textColor="#41b324"
+                                android:textSize="30sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="3dp"
+                            android:background="#000000" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#dddddd"
+                            android:orientation="horizontal">
+
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Sponsorship Summary"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="22sp"
+                    android:textStyle="bold|italic" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:text="Today"
+                                android:textSize="20sp" />
+
+                            <ImageView
+                                android:layout_width="120dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_vertical"
+                                android:paddingTop="15dp"
+                                android:paddingBottom="15dp"
+                                android:scaleType="fitEnd"
+                                />
+
+                            <TextView
+                                android:id="@+id/todaysponsorshipamount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:text="0"
+                                android:textColor="#41b324"
+                                android:textSize="30sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="3dp"
+                            android:background="#000000" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#dddddd"
+                            android:orientation="horizontal">
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:text="This Month"
+                                android:textSize="20sp" />
+
+                            <ImageView
+                                android:layout_width="120dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_vertical"
+                                android:paddingTop="17dp"
+                                android:paddingBottom="15dp"
+                                android:scaleType="fitEnd"
+                               />
+
+                            <TextView
+                                android:id="@+id/thismonthsponsorshipamount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:text="0"
+                                android:textColor="#41b324"
+                                android:textSize="30sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="3dp"
+                            android:background="#000000" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#dddddd"
+                            android:orientation="horizontal">
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/crpcases"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Reported CP cases"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="22dp"
+                    android:textStyle="bold|italic" />
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:text="Today"
+                                android:textSize="20dp" />
+
+                             <ImageView
+                                 android:layout_width="120dp"
+                                 android:layout_height="50dp"
+                                 android:layout_gravity="center_vertical"
+                                 android:paddingTop="15dp"
+                                 android:paddingBottom="15dp"
+                                 android:scaleType="fitEnd"
+                                 />
+
+                            <TextView
+                                android:id="@+id/todaycrpcasescount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:text="0"
+                                android:textColor="#41b324"
+                                android:textSize="30dp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="3dp"
+                            android:background="#000000" />
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    app:cardElevation="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:padding="10dp"
+                                android:text="This Month"
+                                android:textSize="20dp" />
+
+                            <ImageView
+                                android:layout_width="120dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center_vertical"
+                                android:paddingTop="15dp"
+                                android:paddingBottom="15dp"
+                                android:scaleType="fitEnd"
+                                />
+
+                            <TextView
+                                android:id="@+id/thismonthcrpcasescount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:text="0"
+                                android:textColor="#41b324"
+                                android:textSize="30dp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="3dp"
+                            android:background="#000000" />
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pamodzichild.CPcases.CPcases">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+
+
+<LinearLayout android:layout_width="match_parent"
+              android:layout_marginTop="@dimen/_16sdp"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reported Cases"
+                android:padding="8dp"
+                android:layout_weight="2"
+
+                android:textColor="@color/blueish"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+             />
+
+
+    <Button android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:background="@drawable/background_shape"
+            android:backgroundTint="@color/yellow"
+            android:id="@+id/caseIDbtn"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="@color/Black"
+              android:text="Open"/>
+    <Button android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:background="@drawable/background_shape"
+            android:backgroundTint="@color/green"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="@color/Black"
+              android:layout_marginEnd="@dimen/_10sdp"
+              android:text="Closed"/>
+
+</LinearLayout>
+
+
+
+
+            <androidx.appcompat.widget.SearchView
+                    android:id="@+id/searchView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:iconifiedByDefault="true"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:background="@drawable/rounded_edittext"
+                    android:queryHint=" Search..."/>
+
+
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Data Available"
+        android:textColor="@color/Red"
+        android:fontFamily="casual"
+        android:letterSpacing=".2"
+        android:textSize="18sp"
+        android:id="@+id/noData"
+       android:textStyle="bold"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>
