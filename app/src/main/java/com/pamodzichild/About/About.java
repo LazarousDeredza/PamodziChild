@@ -51,6 +51,7 @@ public class About extends Fragment {
     public void onResume() {
         MainActivity.fab = requireActivity().findViewById(R.id.fab);
         MainActivity.fab.setImageDrawable(getResources().getDrawable(R.drawable.ic_baseline_person_outline_24));
+       MainActivity.fab.hide();
         super.onResume();
     }
 }

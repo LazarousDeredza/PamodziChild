@@ -122,30 +122,17 @@ public class LauncherActivity extends AppCompatActivity {
                     startActivity(intent);
                     finish();
                 }
-
-
             }
         }, SPLASH_SCREEN);
     }
-
+//gug
 
     public void checkPermissions() {
         Dexter.withContext(this)
                 .withPermissions(
-
-
-                       Manifest.permission.ACCESS_FINE_LOCATION,
                         Manifest.permission.INTERNET,
-                        Manifest.permission.READ_PHONE_STATE,
-                        Manifest.permission.RECEIVE_SMS,
-                        Manifest.permission.READ_SMS,
                         Manifest.permission.ACCESS_NETWORK_STATE,
-                        Manifest.permission.ACCESS_WIFI_STATE,
-                        Manifest.permission.READ_EXTERNAL_STORAGE,
-                        Manifest.permission.WRITE_EXTERNAL_STORAGE,
-                        Manifest.permission.CAMERA
-
-
+                        Manifest.permission.ACCESS_WIFI_STATE
                 ).withListener(new MultiplePermissionsListener() {
                     @Override
                     public void onPermissionsChecked(MultiplePermissionsReport report) {/* ... */}
